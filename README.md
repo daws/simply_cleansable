@@ -2,7 +2,7 @@
 
 Provides a framework for cleaning up the attributes on an object in a
 declarative fashion, along with implementations of several common requirements.
-Integrates automatically with ActiveRecord `before_validation` hooks, but works
+Integrates automatically with ActiveModel `before_validation` hooks, but works
 with plain old ruby objects as well.
 
 ## Installation
@@ -37,7 +37,7 @@ Or install it yourself as:
 
 ### Description
 
-Including SimplyCleansable will give you access to the `simply_clease` declaration. It takes a list of one or more attributes, and an optional hash of commands at the end.
+Including SimplyCleansable will give you access to the `simply_cleanse` declaration. It takes a list of one or more attributes, and an optional hash of commands at the end.
 
 The built-in commands are documented below, and some are run by default, just by creating the declaration (ie. nil will be converted to an empty string and whitespace will be stripped by default).
 
